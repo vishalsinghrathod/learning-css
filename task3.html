@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task no.3</title>
+  <style>
+    :root {
+      --color: rgb(189, 28, 229);
+      --seccolor: rgb(204, 127, 112);
+      --box2: rgb(196, 202, 111);
+      --box3:rgb(101, 130, 173);
+      --box4:rgb(105, 166, 172);
+      --box5:rgb(87, 154, 95);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav ul {
+      box-sizing: border-box;
+      list-style: none;
+      display: flex;
+
+
+
+    }
+
+    .nav {
+      border:2px solid var(--color);
+      padding: 7px;
+      border-radius: 12px;
+      background-color: var(--color);
+      height: 50px;
+      box-shadow: 8px 5px 16px 12px var(--box5);
+    }
+
+    .nav ul li {
+      padding: 10px;
+      cursor: pointer;
+      font-size: 25px;
+      
+    }
+
+    .nav li:hover{
+           background-color: rgb(210, 216, 220);
+          
+    }
+
+    input:hover{
+          background-color: rgb(185, 182, 180);
+    }
+
+    input {
+      position: relative;
+      left: 900px;
+      bottom: 35px;
+      cursor: pointer;
+      background-color:antiquewhite;
+      border: none;
+      border-radius: 7px;
+      padding-left: 6px;
+    }
+
+    .box1 {
+      background-color: var(--seccolor);
+      /* border-radius: 10px; */
+    }
+
+    .box2 {
+      background-color: var(--box2);
+      /* border-radius: 10px; */
+    }
+
+    .box3 {
+      /* border-radius: 10px; */
+      background-color: var(--box3);
+    }
+
+    .box4 {
+      /* border-radius: 10px; */
+      background-color: var(--box4);
+    }
+
+    .box5 {
+      /* border-radius: 10px; */
+      background-color: var(--box5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <li class="box1">HOME</li>
+      <li class="box2">PROJECTS</li>
+      <li class="box3">ABOUT US</li>
+      <li class="box4">GALLERY</li>
+      <li class="box5">CONTACTS</li>
+    </ul>
+
+    <input type="text" placeholder="search">
+
+
+  </div>
+</body>
+
+</html>
