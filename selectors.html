@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+               background-color: brown;
+           } */
+
+        /* .boxes::first-line{
+               color: chartreuse;
+          } */
+
+        .boxes * {
+            color: blue;
+            border: 2px solid black;
+        }
+
+       p, a, .box, [data-color="primary"] {
+            padding-top: 45px;
+        }
+
+        /* .box:nth-child(even){
+              color: aqua;
+              background-color: brown;
+        } */
+
+        /* .box:nth-child(odd){
+              color: aqua;
+              background-color: brown;
+        } */
+
+        /* .box:nth-child(2){
+              color: blue;
+              background-color: brown;
+        } */
+
+        /* .box:nth-last-child(1){
+              color: chartreuse;
+              background-color: #c72525;
+        } */
+
+        .boxes::before{
+             content: "I am very happy";
+             color: burlywood;
+        }
+        
+        .boxes::after{
+            content: "I want to create website";
+            color: blueviolet;
+        }
+         
+        ::selection{
+            color: crimson;
+            background-color: chartreuse;
+        }
+
+        .box::first-letter{
+            color: rgb(180, 12, 57);
+            font-size: 45px;
+
+        }
+
+        input::placeholder{
+            color: chartreuse;
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I Love CSS</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="type your name here">
+    </div>
+</body>
+
+</html>
