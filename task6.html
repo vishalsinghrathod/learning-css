@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout using grid</title>
+    <style>
+          .container{
+            border: 5px solid rgb(238, 232, 232);
+            height: 96vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* gap: 5px; */
+            box-sizing: border-box;
+            
+          }
+
+          .item{
+            border: 2px solid rgb(241, 236, 236);
+            /* height: 55px; */
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            
+          }
+
+          .item-1{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            /* height: 50px; */
+            background-color: rgb(7, 215, 215);
+          }
+
+         .item-2{
+            grid-row: 2/7;
+            grid-column: 1/2;
+            background-color: aqua;
+         }
+
+         .item-3{
+            grid-column: 2/5;
+            grid-row: 2/5;
+            background-color: rgb(13, 199, 199);
+         }
+
+         .item-4{
+            grid-row: 5/6;
+            grid-column: 2/3;
+            height: 90px;
+            background-color: rgb(12, 179, 123);
+         }
+         .item-5{
+            grid-row: 5/6;
+            grid-column: 3/4;
+            height: 90px;
+            background-color: rgb(11, 237, 161);
+         }
+
+         .item-6{
+             grid-row: 5/6;
+             grid-column: 4/5;
+             height: 90px;
+             background-color: rgb(5, 143, 97);
+         }
+         .item-7{
+            grid-column: 2/5;
+            grid-row: 6/7;
+            height: 70px;
+            background-color: aquamarine;
+         }
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="item item-1">navbar</div>
+        <div class="item item-2">sidebar</div>
+        <div class="item item-3">main</div>
+        <div class="item item-4">content1</div>
+        <div class="item item-5">content2</div>
+        <div class="item item-6">content3</div>
+        <div class="item item-7">footer</div>
+      </div>
+</body>
+</html>
