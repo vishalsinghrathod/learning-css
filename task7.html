@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using flexbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            border: 2px solid rgb(83, 81, 81);
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+
+        }
+
+        .container1{
+            display: flex;
+            gap: 8px;
+            margin-left: 20px;
+            cursor: pointer;
+            
+        }
+
+        .item1{
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: yellow;
+            height: 25px;
+            font-weight: bold;
+        }
+
+        .item2{
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+        }
+
+        .container2{
+          display: flex;
+          gap: 8px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="item1">UE</div>
+            <div class="item2">UltraEdit</div>
+            
+        </div>
+
+        <div class="container2">
+            <div class=" item-1">Products <i class="fa-solid fa-chevron-down"></i></div>
+            <div class=" item-2">Pricing <i class="fa-solid fa-chevron-down"></i></div>
+            <div class=" item-3">Resources <i class="fa-solid fa-chevron-down"></i></div>
+            <div class=" item-4">About Us <i class="fa-solid fa-language"></i></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
