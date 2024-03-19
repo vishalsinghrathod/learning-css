@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            height: 90vh;
+            width: 100vh;
+            border: 2px solid black;
+            background-color: brown;
+           
+        }
+
+        .box{
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+            font-weight: bolder;
+            font-size: 50px;
+            background-color: aqua;
+            /* animation-name: vishalKaAnimation; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-iteration-count: 3; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 1s; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation: vishalKaAnimation 3s ease-out 1s infinite alternate-reverse , 
+                       vishal2 3s ease-out 1s infinite alternate-reverse
+            
+                       
+           
+        }
+
+        @keyframes vishalKaAnimation {
+
+            from{
+                background-color: rgb(15, 116, 233);
+                /* transform: translateY(400px); */
+            }
+
+            to{
+                background-color: chartreuse;
+                /* transform: translateX(550px); */
+            }  
+        }
+
+        @keyframes vishal2 {
+           0%{
+            transform: rotate(200deg);
+            }
+
+           20%{
+            transform: rotate(400deg);
+           }
+
+           50%{
+            transform: rotate(600deg);
+           }
+
+           80%{
+            transform: rotate(800deg);
+           }
+
+           100%{ 
+            transform: rotate(1000deg);
+           }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
