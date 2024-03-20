@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task no. 9</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            position: relative;
+        }
+
+        .box {
+            height: 70px;
+            width: 80px;
+            border: 2px solid black;
+            background-color: coral;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: animateX 3s linear infinite , animateY 1s ease-out infinite alternate;
+            
+        }
+
+        @keyframes animateX {
+            from {
+                left: 0%;
+            }
+
+            to {
+                left: 70%;
+            }
+        }
+
+        @keyframes animateY {
+            from {
+                bottom: 0%;
+            }
+
+            to {
+                bottom: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
